@@ -1,0 +1,6 @@
+category_name,total_instances,unique_images,local_images,mean_bbox_area,mean_num_keypoints
+dog,1771,1529,200,63771.42,20.0
+cat,1466,1324,200,80339.13,20.0
+sheep,1078,556,200,43625.67,20.0
+horse,960,723,200,52556.78,20.0
+cow,842,534,200,38440.85,20.0

@@ -1,0 +1,7 @@
+metric,value
+instancias_anotadas_cow,842.0
+imagens_unicas_cow,534.0
+imagens_locais_cow,200.0
+proporcao_cow_no_dataset,0.1376
+media_area_bbox_cow,38440.85
+media_keypoints_visiveis_cow,20.0
