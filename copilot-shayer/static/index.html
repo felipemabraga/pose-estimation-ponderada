@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>RJ Copilot MVP</title>
+    <link rel="stylesheet" href="/static/styles.css" />
+  </head>
+  <body>
+    <main class="app-shell">
+      <section class="panel">
+        <div class="panel-header">
+          <div>
+            <p class="eyebrow">MVP</p>
+            <h1>Recuperacao Judicial Copilot</h1>
+            <p class="subtitle">
+              Internal legal assistant prototype for summaries, questions, and next-step suggestions.
+            </p>
+          </div>
+          <div class="document-pill" id="documentStatus">No document loaded</div>
+        </div>
+
+        <div class="upload-row">
+          <label class="upload-button" for="fileInput">Upload PDF or TXT</label>
+          <input id="fileInput" type="file" accept=".pdf,.txt" />
+          <button class="secondary-button" id="clearDocumentButton" type="button">Clear document</button>
+        </div>
+
+        <div class="api-key-row">
+          <label for="apiKeyInput">OpenAI API key</label>
+          <input
+            id="apiKeyInput"
+            type="password"
+            placeholder="Optional in local/server mode, required for the public demo if no server key is set"
+          />
+        </div>
+
+        <div class="messages" id="messages">
+          <article class="message assistant">
+            <div class="message-role">Assistant</div>
+            <div class="message-content">
+              Ask a question or upload a legal document to summarize, extract risks, or generate a checklist.
+            </div>
+          </article>
+        </div>
+
+        <form id="chatForm" class="chat-form">
+          <textarea
+            id="messageInput"
+            rows="4"
+            placeholder="Ex.: Resuma os pontos principais deste pedido inicial e sugira os próximos passos."
+            required
+          ></textarea>
+          <div class="form-footer">
+            <span class="hint">This is a demo and should always be validated by a lawyer.</span>
+            <button id="sendButton" type="submit">Send</button>
+          </div>
+        </form>
+      </section>
+    </main>
+
+    <script src="/static/app.js"></script>
+  </body>
+  </html>
